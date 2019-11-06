@@ -11,21 +11,15 @@
         margin-right: auto;
       }
       img:hover {
-        animation: shake 1.5s;
+        animation: shake 2s;
         animation-iteration-count: infinite;
       }
 
       @keyframes shake {
         0% { transform: translate(0px, 0px) rotate(0deg); }
-        //10% { transform: translate(0px, 0px) rotate(36deg); }
-        //20% { transform: translate(0px, 0px) rotate(72deg); }
-        //30% { transform: translate(0px, 0px) rotate(108deg); }
-        //40% { transform: translate(0px, 0px) rotate(144deg); }
-        50% { transform: translate(100px, 0px) rotate(0deg); }
-        //60% { transform: translate(0px, 0px) rotate(215deg); }
-        //70% { transform: translate(0px, 0px) rotate(252deg); }
-        //80% { transform: translate(0px, 0px) rotate(288deg); }
-        //90% { transform: translate(0px, 0px) rotate(324deg); }
+        25% { transform: translate(200px, 0px) rotate(0deg); }
+        50% { transform: translate(0px, 0px) rotate(0deg); }
+        75% { transform: translate(-200px, 0px) rotate(0deg); }
         100% { transform: translate(0px, 0px) rotate(0deg); }
       }
     </style>
