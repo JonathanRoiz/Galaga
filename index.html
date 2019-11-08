@@ -4,7 +4,8 @@
   <body>
     <style>
       body {
-        background-image: linear-gradient(to top right,red, yellow, green);;
+        background-image: linear-gradient(to top right,red, yellow, green);
+        
       }
       img {
         display: block;
@@ -16,14 +17,15 @@
         animation-iteration-count: infinite;
       }
       @keyframes shake {
-        0% { transform: translate(0px, 0px) rotate(0deg); }
-        100% { transform: translate(0px, 0px) rotate(360deg); }
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(180deg); }
+        100% { transform: rotate(360deg); }
       }
     </style>
 
     <h1 style="text-align:center;"id="h1">My Website</h1>
     <p style="text-align:center;"id="p1">Hello</p>
-    <img src="https://cdn.pixabay.com/photo/2018/08/24/20/05/ufo-3628773_960_720.png" alt="Space Ship" class="center" width=400>
+    <img src="https://www.pngarts.com/files/4/Coin-PNG-Picture.png" alt="Coin" class="center" width=300>
     <br><center><a href="https://www.instagram.com/jonathan_roizz/" id="link">My Instagram</a></center>
     <script>
       document.getElementById("p1").style.color = "black";
@@ -31,6 +33,7 @@
       document.getElementById("h1").style.color = "red";
       document.getElementById("h1").style.fontSize = "55";
       document.getElementById("link").style.fontSize = "30"
+      document.getElementById("link").style.color = "Blue";
     </script>
   </body>
 </html>
