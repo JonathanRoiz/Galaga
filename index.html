@@ -59,11 +59,13 @@ body {font-family: Arial, Helvetica, sans-serif;}
   
   <div class="input-container">
     <i class="fa fa-key icon"></i>
-    <input class="input-field" type="password" placeholder="Password" name="psw">
+    <input class="input-field" type="text" placeholder="Password" name="psw">
   </div>
 
   <button type="submit" class="btn">Register</button>
-</form>
-
-</body>
+  
+  </form>
+    Welcome <?php echo $_GET["Username"]; ?><br>
+    Your Email is: <?php echo $_GET["Email"]; ?>
+ </body>
 </html>
