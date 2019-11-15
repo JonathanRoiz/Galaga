@@ -1,16 +1,12 @@
-<!DOCTYPE html>
-<html>
-<body>
+function draw() {
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
 
-<canvas id="myCanvas" width="200" height="100"</canvas>
-
-<script>
-var canvas = document.getElementById("myCanvas");
-var ctx = canvas.getContext("2d");
-ctx.beginPath();
-ctx.arc(95,50,40,10,0,2);
-ctx.stroke();
-</script> 
-
-</body>
-</html>
+    ctx.beginPath();
+    ctx.moveTo(75, 50);
+    ctx.lineTo(100, 75);
+    ctx.lineTo(100, 25);
+    ctx.fill();
+  }
+}
