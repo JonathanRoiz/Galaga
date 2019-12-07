@@ -56,12 +56,24 @@ var level1 = [
   [ 22000,  25000, 400, 'wiggle', { x: 100 }]
 ];
 
+var level2 = [
+ // Start,   End, Gap,  Type,   Override
+  [ 0,      4000,  0, 'step' ],
+  [ 0,   4000, 0, 'ltr' ],
+  [ 0,  4000, 0, 'circle' ],
+  [ 0,  4000, 0, 'straight', { x: 50 } ],
+  [ 0,  4000, 0, 'straight', { x: 90 } ],
+  [ 0,  4000, 0, 'straight', { x: 10 } ],
+  [ 0,  4000, 0, 'wiggle', { x: 150 }],
+  [ 0,  6000, 0, 'wiggle', { x: 100 }]
+];
+
 
 
 var playGame = function() {
   var board = new GameBoard();
   board.add(new PlayerShip());
-  board.add(new Level(level1,winGame));
+  board.add(new Level(level2,winGame));
   Game.setBoard(3,board);
   Game.setBoard(5,new GamePoints(0));
 };
