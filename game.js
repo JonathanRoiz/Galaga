@@ -16,7 +16,7 @@ var enemies = {
               B: 75, C: 1, E: 100, missiles: 2  },
   circle:   { x: 250,   y: -50, sprite: 'enemy_circle', health: 10, 
               A: 0,  B: -100, C: 1, E: 20, F: 100, G: 1, H: Math.PI/2 },
-  wiggle:   { x: 100, y: -50, sprite: 'enemy_bee', health: 20, 
+  wiggle:   { x: 50, y: -50, sprite: 'enemy_bee', health: 20, 
               B: 100, C: 4, E: 100, firePercentage: 0.001, missiles: 2 },
   step:     { x: 0,   y: -50, sprite: 'enemy_circle', health: 10,
               B: 150, C: 1.2, E: 75 }
@@ -63,9 +63,12 @@ var level2 = [
   [ 4000,  6000, 600, 'circle' ],
   [ 6000,  8000, 600, 'wiggle', { x: 50 } ],
   [ 8000,  10000, 600, 'wiggle', { x: 90 } ],
-  [ 10000,  12000, 600, 'wiggle', { x: 10 } ],
+  [ 10000,  12000, 600, 'straight', { x: 10 } ],
   [ 12000,  14000, 600, 'wiggle', { x: 150 }],
-  [ 14000,  16000, 600, 'wiggle', { x: 100 }]
+  [ 14000,  16000, 600, 'wiggle', { x: 100 }],
+  [ 16000,  18000, 600, 'circle', { x: 100 }],
+  [ 18000,  20000, 600, 'step', { x: 100 }],
+  [ 20000,  22000, 600, 'wiggle', { x: 100 }],
 ];
 
 
